@@ -1,0 +1,152 @@
+.footer {
+    display: flex;
+    width: 100%;
+    height: 417px;
+    align-items: center;
+    justify-content: center;
+    background: #EEF2F7;
+}
+
+.logo-wrap {
+    /* width: 198px; */
+    margin-left: 49px;
+}
+
+.map {
+    margin-left: 122px;
+}
+
+.footer-text-block {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 210px;
+    margin-left: 58px;
+}
+
+.nav-footer h5, 
+.contact h5, 
+.address-footer h5 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D5459;
+}
+
+
+.nav-footer a,
+.contact a,
+.address-footer p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #4D5459;
+}
+
+.contact a,
+.address-footer p {
+    margin-left: 16px;
+}
+
+.line-footer {
+    position: relative;
+    top: 15px;
+    right: 8%;
+    min-width: 220px;
+    height: 0.2px;
+    background-color: #E9841A;
+    transform: rotate(90deg);
+
+}
+
+.contact {
+    display: flex;
+    position: relative;
+    right: 14%;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 251px;
+    height: 171px;
+}
+
+.contact-phone, .contact-mail, .contact-vk {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.address-footer-wrap {
+    /* position: relative; */
+}
+
+.address-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 232px;
+    height: 127px;
+}
+
+.address-street, .working-hours {
+    display: flex;
+    flex-direction: row;
+}
+
+.address-street {
+
+}
+
+.working-hours {
+
+}
+
+.privacy-policy {
+    margin-top: 19px;
+}
+.privacy-policy p, .privacy-policy a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #4D5459;
+}
+
+
+
+/* @media (max-width: 1200px) {
+    .footer {
+
+    }
+    .footer .container {
+
+    }
+}
+
+@media (max-width: 992px) {
+    .footer {
+
+    }
+    .footer .container {
+
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+
+    }
+    .footer .container {
+
+    }
+} */

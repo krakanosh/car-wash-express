@@ -1,0 +1,152 @@
+@import "normalize.css";
+@import "base.css";
+@import "container.css";
+@import "header.css";
+@import "slider.css";
+@import "reviews.css";
+@import "footer.css";
+
+.landing-page {
+    /* padding-top: 60px; */
+    flex: 1 1 auto;
+}
+
+.advantage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 340px;
+    background: #EDEFF0;
+}
+
+.advantage-wrap {
+
+}
+
+.advantage-block {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    max-width: 340px;
+    height: 240px;
+}
+
+.icon-block {
+    padding-top: 10px;
+}
+
+.text-wrap {
+    padding-top: 24px;
+}
+
+.text-wrap h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+}
+
+.text-wrap p {
+    width: 330px;
+    margin-top: 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+}   
+
+.line-our-services {
+    min-width: 240px;
+    height: 0.2px;
+    background-color: #E9841A;
+    transform: rotate(90deg);
+}
+
+
+    /* блок Наши услуги начало */
+.our-services {
+    width: 100%;
+    height: 900px;
+    background: #111111;
+}
+
+.our-services-wrap {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 417px 280px;
+    grid-template-columns: 537px auto;
+    align-items: center;
+}
+
+.our-services h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 44px;
+    color: #E9841A;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.our-services-block {
+    width: 489px;
+    height: 300px;
+    border: 1px solid #F7931E;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.our-services-icons {
+    padding: 20px 0 0 33px;
+}
+
+.services-text-wrap {
+    width: 423px;
+    height: 79px;
+    margin: auto;
+    padding-top: 24px;
+}
+
+.services-text-wrap h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EDEFF0;
+}
+
+.services-text-wrap p {
+    padding-top: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #E5E5E5;
+}
+    /* блок Наши услуги конец */
+
+
+/* @media (max-width: 1200px) {
+    .landing-page {
+
+    }
+}
+@media (max-width: 992px) {
+    .landing-page {
+
+    }
+}
+@media (max-width: 768px) {
+    .landing-page {
+
+    }
+} */
