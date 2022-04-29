@@ -50,11 +50,66 @@
     color: #fff;
     font-size: 35px;
     /* Выравнивание текста по горизонтали и по вертикали*/
-    left: 50%;
+    left: 35%;
     top: 50%;
     transform: translate(-50%, -50%);
     /* Тень*/
     text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+
+.slideText h2 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #EDEFF0;
+    margin-bottom: 48px;
+}
+
+.slideText span {
+    color: #E9841A;
+}
+.slideText p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #EDEFF0;
+    margin-bottom: 18px;
+}
+
+.slideText a {
+    padding: 9px 10px 9px 10px;
+}
+
+.slideText a:nth-child(even){
+    width: 221px;
+    height: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #E9841A;
+    border-radius: 5px;
+}
+
+.slideText a:nth-child(odd){
+    width: 211px;
+    height: 40px;
+    border: 2px solid #F7931E;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
 }
 
 /* Кружочки */

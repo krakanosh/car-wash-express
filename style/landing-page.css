@@ -12,23 +12,23 @@
 }
 
 .advantage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 340px;
     background: #EDEFF0;
+    display: flex;
+    justify-content: center;
 }
 
 .advantage-wrap {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .advantage-block {
     display: flex;
     flex-direction: column;
-    width: 240px;
-    max-width: 340px;
+    width: 298px;
     height: 240px;
 }
 
@@ -41,24 +41,25 @@
 }
 
 .text-wrap h2 {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 900;
     font-size: 36px;
     line-height: 44px;
     color: #000000;
+    min-width: 298px;
 }
 
 .text-wrap p {
-    width: 330px;
+    width: 298px;
     margin-top: 12px;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
     color: #000000;
-}   
+}
 
 .line-our-services {
     min-width: 240px;
@@ -84,7 +85,7 @@
 }
 
 .our-services h2 {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 900;
     font-size: 36px;
@@ -113,7 +114,7 @@
 }
 
 .services-text-wrap h3 {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -123,7 +124,7 @@
 
 .services-text-wrap p {
     padding-top: 24px;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -132,8 +133,238 @@
     align-items: center;
     color: #E5E5E5;
 }
-    /* блок Наши услуги конец */
+/* блок Наши услуги конец */
 
+/* Блок Скидка - начало */
+.discount {}
+
+.discount-banner {
+    width: 100%;
+    height: 468px;
+    background: url("../img/discount-banner.jpg") no-repeat;
+    background-size: cover;
+}
+
+.review-discount {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 341px;
+    background: #EDEFF0;
+    padding-right: 20vw;
+}
+
+.review-discount-text {
+    margin: 60px 20vw;
+}
+
+.review-discount-text h2 {
+    width: 468px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 44px;
+    color: #111111;
+}
+
+.review-discount-text p {
+    margin-top: 48px;
+    width: 468px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #4D5459;
+}
+
+.review-discount-form {
+    width: 600px;
+    height: 430px;
+    margin: -200px;
+    background: #FFFFFF;
+    border: 1px solid #9CA4A7;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.review-discount-form h6 {
+    margin: 51px 57px 60px 56px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    align-items: center;
+    color: #111111;
+}
+
+.review-discount-form span {
+    color: #E9841A;
+}
+
+.review-discount-form ol {
+    width: 478px;
+    height: 84px;
+    margin: 51px 57px 60px 80px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #4D5459;
+}
+
+.review-discount-form p {
+    margin: 12px 0 0 56px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #9CA4A7;
+}
+
+.form {
+    margin: 51px 57px 0 50px;
+}
+
+.discount-button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    padding: 9px 16px 9px 16px;
+    background: #E9841A;
+    border-radius: 5px;
+}
+/* Блок Скидка - конец */
+
+/* Блок О нас - начало */
+.about-us {
+    display: flex;
+    justify-content: center;
+    background: #111111;
+}
+
+.about-us-img {
+    width: 55%;
+    height: 502px;
+    background: url("../img/about-us.jpg") no-repeat right;
+    background-size: cover;
+    background-color: #111111;
+}
+
+.about-us-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    width: 45%;
+    height: 502px;
+    background: #E9841A;
+}
+
+.about-us-text h2 {
+    padding: 60px 0 48px 0;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 44px;
+    color: #111111;
+}
+
+.about-us-text p {
+    width: 468px;
+    height: 270px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #111111;
+}
+/* Блок О нас - конец */
+
+/* UTP блок начало */
+.utp-block {
+    width: 100%;
+    height: 748px;
+    background: #111111;
+    display: flex;
+    flex-direction: column;
+}
+
+.utp-block h2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    color: #E9841A;
+}
+
+.utp {
+/* display: grid;
+grid-template-columns: 60px 357px 1fr;
+grid-template-rows: 60px 1px 60px 1px 60px 1px 60px 1px 60px;
+grid-column-gap: 0px;
+grid-row-gap: 20px; */
+
+    display: grid;
+    grid-template-columns: 0.2fr repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 40px;
+
+    width: 1047px;
+    height: 460px;
+    margin: auto;
+
+}
+
+.utp div:nth-child(3n+1) {
+    background: url("../img/check-mark-icon.svg") no-repeat;
+    background-size: contain;
+}
+
+.utp div:nth-child(3n+2) {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    color: #EDEFF0;
+}
+
+.utp div:nth-child(3n+3) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #EDEFF0;
+}
+
+.utp hr:nth-child(3n+4) {
+    width: 40vw;
+    border: 1px solid #E9841A;
+}
+
+/* UTP блок конец */
 
 /* @media (max-width: 1200px) {
     .landing-page {
@@ -149,4 +380,12 @@
     .landing-page {
 
     }
-} */
+} 
+
+@media (max-width: 320px) {
+    .header {}
+
+    .header .container {}
+}*/
+
+

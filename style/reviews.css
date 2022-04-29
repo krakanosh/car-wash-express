@@ -3,7 +3,8 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 775px;
+    height: 853px;
+    background-color: #E5E5E5;
 }
 
 .reviews-wrap {
@@ -84,4 +85,145 @@
     font-size: 18px;
     line-height: 21px;
     color: #4D5459;
+}
+
+.wrap-form-reviews {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+    background-color: #E9841A;
+}
+
+.wrap-form-reviews h2 {
+    width: 448px;
+    height: 88px;
+    margin: 86px 58px 0 10vw;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    color: #111111;
+}
+
+.form-reviews {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 370px;
+    background: #FFFFFF;
+    border: 1px solid #9CA4A7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: -90px;
+}
+
+.form-reviews h6 {
+    width: 537px;
+    height: 32px;
+    padding: 30px 0 70px 37px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #4D5459;
+}
+
+.block-alignment {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 136px;
+    padding-right: 8px;
+}
+
+input {
+    width: 250px;
+    height: 40px;
+    border: 1px solid #9CA4A7;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #9CA4A7;
+}
+
+.right-side {}
+
+.name, .email, .tel {
+    padding-left: 16px;
+}
+
+textarea {
+    padding: 9px 0 0 12px;
+    resize: none;
+    width: 270px;
+    height: 136px;
+    border: 1px solid #9CA4A7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+textarea::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #9CA4A7;
+}
+
+.button-submit {
+    width: 190px;
+    height: 40px;
+    background: #E9841A;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin: 33px 0 16px 37px;
+}
+
+.form-reviews p {
+    margin-left: 37px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #9CA4A7;
 }
