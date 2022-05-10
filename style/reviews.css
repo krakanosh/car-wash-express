@@ -13,12 +13,13 @@
 }
 
 .reviews-wrap h2 {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 900;
     font-size: 36px;
     line-height: 44px;
     color: #111111;
+    margin-left: 30px;
 }
 
 .reviews-wrap p {
@@ -28,10 +29,12 @@
     font-size: 20px;
     line-height: 23px;
     color: #4D5459;
+    margin-left: 30px;
 }
 
 .rev-slider {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 100px;
@@ -40,6 +43,8 @@
 .slide {
     width: 370px;
     height: 349px;
+    margin: 0 20px 0 20px;
+    
 }
 
 .name-block {
@@ -91,14 +96,16 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    min-width: 60%;
     height: 350px;
     background-color: #E9841A;
 }
 
 .wrap-form-reviews h2 {
     width: 448px;
+    min-width: 448px;
     height: 88px;
-    margin: 86px 58px 0 10vw;
+    margin: 86px 5vw 0 0;
     font-family: "Inter";
     font-style: normal;
     font-weight: 900;
@@ -119,6 +126,7 @@
     box-sizing: border-box;
     border-radius: 5px;
     margin-top: -90px;
+        margin-right: 2vw;
 }
 
 .form-reviews h6 {
@@ -226,4 +234,23 @@ textarea::placeholder {
     font-size: 14px;
     line-height: 16px;
     color: #9CA4A7;
+}
+
+@media (max-width: 1085px) {
+    .block-alignment {
+        /* flex-direction: column; */
+    }
+
+    .wrap-form-reviews {
+        flex-direction: column;
+        align-items: center;
+        height: 650px;
+    }
+
+        .wrap-form-reviews h2 {
+            margin: 0 0 40px 0;        }
+
+    .form-reviews {
+        margin-top: 0;
+    }
 }

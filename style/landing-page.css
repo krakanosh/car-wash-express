@@ -17,23 +17,33 @@
     background: #EDEFF0;
     display: flex;
     justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
 }
 
 .advantage-wrap {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 728px;
+    width: 100%;
 }
 
 .advantage-block {
     display: flex;
     flex-direction: column;
-    width: 298px;
+    width: 340px;
     height: 240px;
 }
 
-.icon-block {
-    padding-top: 10px;
+.advantage-block:nth-child(1){
+    margin-left: 4vw;
+}
+
+.advantage-icon {
+    width: 60px;
+    width: 60px;
+    /* padding-top: 10px; */
 }
 
 .text-wrap {
@@ -44,14 +54,13 @@
     font-family: "Inter";
     font-style: normal;
     font-weight: 900;
-    font-size: 36px;
+    font-size: calc(1rem + 1.13vw);
+    /* font-size: 36px; */
     line-height: 44px;
     color: #000000;
-    min-width: 298px;
 }
 
 .text-wrap p {
-    width: 298px;
     margin-top: 12px;
     font-family: "Roboto";
     font-style: normal;
@@ -62,26 +71,32 @@
 }
 
 .line-our-services {
-    min-width: 240px;
-    height: 0.2px;
+    min-width: 0.2px;
+    height: 240px;
     background-color: #E9841A;
-    transform: rotate(90deg);
+    margin: 0 4vw 0 4vw;
 }
 
 
     /* блок Наши услуги начало */
 .our-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 900px;
     background: #111111;
 }
 
 .our-services-wrap {
+    width: 70vw;
+    min-width: 500px;
     display: grid;
     justify-content: center;
-    grid-template-rows: 417px 280px;
-    grid-template-columns: 537px auto;
-    align-items: center;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    margin-top: 24px;
 }
 
 .our-services h2 {
@@ -92,25 +107,33 @@
     line-height: 44px;
     color: #E9841A;
     text-align: center;
-    padding-top: 60px;
+    margin-top: -30px;
 }
 
 .our-services-block {
-    width: 489px;
+    display: flex;
+    flex-direction: column;
+    width: calc(289px + 10vw);
     height: 300px;
     border: 1px solid #F7931E;
     box-sizing: border-box;
     border-radius: 5px;
+    margin: 24px;
 }
+
 .our-services-icons {
     padding: 20px 0 0 33px;
 }
 
+.our-services-block img {
+    padding: 20px 0 0 33px;
+    width: 90px;
+    height: 90px;
+
+}
+
 .services-text-wrap {
-    width: 423px;
-    height: 79px;
-    margin: auto;
-    padding-top: 24px;
+    padding: 24px 0px 0px 25px;
 }
 
 .services-text-wrap h3 {
@@ -136,7 +159,10 @@
 /* блок Наши услуги конец */
 
 /* Блок Скидка - начало */
-.discount {}
+.discount {display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .discount-banner {
     width: 100%;
@@ -151,11 +177,11 @@
     width: 100%;
     height: 341px;
     background: #EDEFF0;
-    padding-right: 20vw;
+    box-sizing: content-box;
 }
 
 .review-discount-text {
-    margin: 60px 20vw;
+    margin: 60px 6vw 0 0;
 }
 
 .review-discount-text h2 {
@@ -182,10 +208,9 @@
 .review-discount-form {
     width: 600px;
     height: 430px;
-    margin: -200px;
+    margin-top: -200px;
     background: #FFFFFF;
     border: 1px solid #9CA4A7;
-    box-sizing: border-box;
     border-radius: 5px;
 }
 
@@ -251,7 +276,7 @@
 }
 
 .about-us-img {
-    width: 55%;
+    width: 55vw;
     height: 502px;
     background: url("../img/about-us.jpg") no-repeat right;
     background-size: cover;
@@ -269,7 +294,7 @@
 }
 
 .about-us-text h2 {
-    padding: 60px 0 48px 0;
+    margin: 1vw 0 2vw 0;
     font-family: "Inter";
     font-style: normal;
     font-weight: 900;
@@ -279,14 +304,14 @@
 }
 
 .about-us-text p {
-    width: 468px;
-    height: 270px;
+    /* max-width: 30vw; */
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: calc(1rem + 0.1vw);
     line-height: 21px;
     color: #111111;
+    margin: 0 calc(42px + 2vw) 0 calc(33px + 1vw);
 }
 /* Блок О нас - конец */
 
@@ -297,6 +322,7 @@
     background: #111111;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .utp-block h2 {
@@ -309,67 +335,262 @@
     font-size: 40px;
     line-height: 48px;
     display: flex;
-    align-items: center;
     color: #E9841A;
 }
 
 .utp {
-/* display: grid;
-grid-template-columns: 60px 357px 1fr;
-grid-template-rows: 60px 1px 60px 1px 60px 1px 60px 1px 60px;
-grid-column-gap: 0px;
-grid-row-gap: 20px; */
-
-    display: grid;
-    grid-template-columns: 0.2fr repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 40px;
-
-    width: 1047px;
-    height: 460px;
-    margin: auto;
-
+    width: max-content;
+    height: max-content;
+    margin-top: 49px;
 }
 
-.utp div:nth-child(3n+1) {
+.utp-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.utp-icon {
+    min-width: 60px;
+    height: 60px;
     background: url("../img/check-mark-icon.svg") no-repeat;
-    background-size: contain;
+    background-size: cover;
+    margin-right: 40px;
 }
 
-.utp div:nth-child(3n+2) {
-    font-family: 'Inter';
+.utp-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.utp-text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 21px;
+}
+
+.utp-text h3 {
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    display: flex;
-    align-items: center;
     color: #EDEFF0;
+    width: 357px;
+    margin-right: 2vw;
 }
 
-.utp div:nth-child(3n+3) {
-    font-family: 'Roboto';
+.utp-text p {
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
     line-height: 23px;
-    display: flex;
-    align-items: center;
     color: #EDEFF0;
-}
+    }
 
-.utp hr:nth-child(3n+4) {
-    width: 40vw;
-    border: 1px solid #E9841A;
+.hr {
+    width: 100%;
+    height: 2px;
+    min-height: 0.2px;
+    background: #E9841A;
+    margin-top: 21px;
 }
 
 /* UTP блок конец */
 
-/* @media (max-width: 1200px) {
+@media (max-width: 1200px) {
     .landing-page {
 
     }
+    
+    .advantage {
+
+    }
+    
+    .advantage-wrap {
+
+    }
+    
+    .advantage-block {
+
+    }
+    
+    .icon-block {
+
+    }
+    
+    .text-wrap {
+
+    }
+    
+    .text-wrap h2 {
+
+    }
+    
+    .text-wrap p {
+
+    }
+    
+    .line-our-services {
+
+    }
+    
+    
+    /* блок Наши услуги начало */
+    .our-services {
+
+    }
+    
+    .our-services-wrap {
+
+    }
+    
+    .our-services h2 {
+
+    }
+    
+    .our-services-block {
+
+    }
+    
+    .our-services-icons {
+
+    }
+    
+    .services-text-wrap {
+
+    }
+    
+    .services-text-wrap h3 {
+
+    }
+    
+    .services-text-wrap p {
+
+    }
+    
+    /* блок Наши услуги конец */
+    
+    /* Блок Скидка - начало */
+    .discount {
+    }
+    
+    .discount-banner {
+
+    }
+    
+    .review-discount {
+        height: 741px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .review-discount-text {
+        margin-top: 380px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .review-discount-text h2 {
+        margin-top: -600px ;
+    }
+    
+    .review-discount-text p {
+
+    }
+    
+    .review-discount-form {
+
+    }
+    
+    .review-discount-form h6 {
+
+    }
+    
+    .review-discount-form span {
+    }
+    
+    .review-discount-form ol {
+
+    }
+    
+    .review-discount-form p {
+
+    }
+    
+    .form {
+    }
+    
+    .discount-button {
+
+    }
+    
+    /* Блок Скидка - конец */
+    
+    /* Блок О нас - начало */
+    .about-us {
+
+    }
+    
+    .about-us-img {
+
+    }
+    
+    .about-us-text {
+
+    }
+    
+    .about-us-text h2 {
+
+
+    }
+    
+    .about-us-text p {
+
+    }
+    
+    /* Блок О нас - конец */
+    
+    /* UTP блок начало */
+    .utp-block {
+        height: max-content;
+        padding-bottom: 2vh;
+    }
+    
+    .utp-block h2 {
+        margin-top: 40px;
+    }
+    
+    .utp {
+        align-items: center;
+
+        
+    }
+    
+    .utp-container {}
+
+    .utp-icon {}
+
+    .utp-wrap {}
+
+    .utp-text {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .utp-text h3 {}
+
+    .utp-text p {}
+
+    .hr {}
 }
 @media (max-width: 992px) {
     .landing-page {
@@ -383,9 +604,117 @@ grid-row-gap: 20px; */
 } 
 
 @media (max-width: 320px) {
-    .header {}
-
-    .header .container {}
-}*/
+        .landing-page {}
+        
+        .advantage {}
+        
+        .advantage-wrap {}
+        
+        .advantage-block {}
+        
+        .icon-block {}
+        
+        .text-wrap {}
+        
+        .text-wrap h2 {}
+        
+        .text-wrap p {}
+        
+        .line-our-services {}
+        
+        
+        /* блок Наши услуги начало */
+        .our-services {}
+        
+        .our-services-wrap {}
+        
+        .our-services h2 {}
+        
+        .our-services-block {}
+        
+        .our-services-icons {}
+        
+        .services-text-wrap {}
+        
+        .services-text-wrap h3 {}
+        
+        .services-text-wrap p {}
+        
+        /* блок Наши услуги конец */
+        
+        /* Блок Скидка - начало */
+        .discount {}
+        
+        .discount-banner {}
+        
+        .review-discount {}
+        
+        .review-discount-text {}
+        
+        .review-discount-text h2 {}
+        
+        .review-discount-text p {}
+        
+        .review-discount-form {}
+        
+        .review-discount-form h6 {}
+        
+        .review-discount-form span {}
+        
+        .review-discount-form ol {}
+        
+        .review-discount-form p {}
+        
+        .form {}
+        
+        .discount-button {}
+        
+        /* Блок Скидка - конец */
+        
+        /* Блок О нас - начало */
+        .about-us {}
+        
+        .about-us-img {}
+        
+        .about-us-text {}
+        
+        .about-us-text h2 {}
+        
+        .about-us-text p {}
+        
+        /* Блок О нас - конец */
+        
+        /* UTP блок начало */
+        .utp-block {}
+        
+        .utp-block h2 {}
+        
+        .utp {
+            /* display: grid;
+            grid-template-columns: 60px 357px 1fr;
+            grid-template-rows: 60px 1px 60px 1px 60px 1px 60px 1px 60px;
+            grid-column-gap: 0px;
+            grid-row-gap: 20px; */
+        
+            display: grid;
+            grid-template-columns: 0.2fr repeat(2, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 40px;
+        
+            width: 1047px;
+            height: 460px;
+            margin: auto;
+        
+        }
+        
+        .utp div:nth-child(3n+1) {}
+        
+        .utp div:nth-child(3n+2) {}
+        
+        .utp div:nth-child(3n+3) {}
+        
+        .utp hr:nth-child(3n+4) {}
+}
 
 

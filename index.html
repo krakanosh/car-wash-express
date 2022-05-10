@@ -28,6 +28,11 @@
 
 <!--	</style>-->
 	<link href="style/landing-page.css" rel="stylesheet" type="text/css">
+
+<!-- Slick - слайдер -->
+
+<!-- Slick - слайдер -->
+
 <!--	<link href="style/landing-page.css" rel="stylesheet" type="text/css" media="only screen and (max-width: 480px)">-->
 	<script defer src="js/action.js"></script>
 	<script defer src="js/slider.js"></script>
@@ -47,26 +52,25 @@
 		<header class="header">
 				<div class="header-upper-block">
 					<div class="upper-block-wrap">
-						<div class="logo-block">
-							<img src="img/logo.svg" alt="Картинка не загрузилась">
-							<div class="text-logo">
-								<h4>CarWash<span>Express</span></h4>
-								<p>Инновационная автомойка</p>
+							<div class="logo-block">
+								<img src="./img/logo.svg" alt="Картинка не загрузилась">
+									<div class="text-logo">
+										<h4>CarWash<span>Express</span></h4>
+										<p>Инновационная автомойка</p>
+									</div>
 							</div>
-						</div>
-						
-						<div class="line-header"></div>
-						<nav class="nav-header">
-								<a href="#">Услуги</a>
-								<a href="#">Акции</a>
-								<a href="#">О&nbsp;нас</a>
-								<a href="#">Отзывы</a>
-						</nav>
-						<div class="line-header"></div>
-						<div class="phone">
-							<img src="img/phone-icon.svg" alt="Картинка не загрузилась">
-							<a href="tel:+7800000000">тел. 8 (800)000-00-0</a>
-						</div>
+							<div class="line-header"></div>
+							<nav class="nav-header">
+									<a class="scale" href="#our-servicesLink">Услуги</a>
+									<a class="scale" href="#discountLink">Акции</a>
+									<a class="scale" href="#about-usLink">О&nbsp;нас</a>
+									<a class="scale" href="#reviewsLink">Отзывы</a>
+							</nav>
+							<div class="line-header"></div>
+							<div class="phone">
+								<img src="img/phone-icon.svg" alt="Картинка не загрузилась">
+								<a href="tel:+7800000000">тел. 8 (800)000-00-0</a>
+							</div>
 						<div class="line-header"></div>
 						<div class="address">
 							<img src="img/map-marker-icon.svg" alt="Картинка не загрузилась">
@@ -92,19 +96,7 @@
 								<a href="">Получить скидку</a>
 							</div>
 						</div>
-					
-						<div class="item">
-							<img src="img/1.jpg" alt="Второй слайд">
-							<div class="slideText">
-								<h2>Чистый кузов <span>за&nbsp;10&nbsp;минут</span><br>
-									быстро и&nbsp;просто</h2>
-								<p>Инновационная автоматическая<br>
-									бесконтактная мойка в&nbsp;Туле</p>
-								<p>Бережем покрытие, хромированные детали,<br> резиновые уплотнители и&nbsp;нервы клиента</p>
-								<a href="">Построить маршрут</a>
-								<a href="">Получить скидку</a>
-							</div>
-						</div>
+
 
 						<div class="item">
 							<img src="img/slide-2.jpg" alt="Второй слайд">
@@ -134,11 +126,18 @@
 						
 						<div class="item">
 							<img src="img/slide-4.jpg" alt="Четвертый слайд">
-							<div class="slideText"></div>
+							<div class="slideText">
+								<h2>Чистый кузов <span>за&nbsp;10&nbsp;минут</span><br>
+									быстро и&nbsp;просто</h2>
+								<p>Инновационная автоматическая<br>
+									бесконтактная мойка в&nbsp;Туле</p>
+								<p>Бережем покрытие, хромированные детали,<br> резиновые уплотнители и&nbsp;нервы клиента</p>
+								<a href="">Построить маршрут</a>
+								<a href="">Получить скидку</a>
+							</div>
 						</div>
-								<!-- Стрелки слайдера -->
-						<!-- <a class="prev" onclick="minusSlide()">&#10094;</a>
-						<a class="next" onclick="plusSlide()">&#10095;</a> -->
+						<a class="prev" onclick="minusSlide()">&#10094;</a>
+						<a class="next" onclick="plusSlide()">&#10095;</a>
 
 						<div class="slider-dots">
 							<span class="slider-dots_item" onclick="currentSlide(1)"></span>
@@ -150,14 +149,24 @@
 						<div class="line-slider"></div>
 					</div>
 							<!-- Слайдер-конец -->
+
+					<div class="head-mobile-wrap">
+						<div class="head-mobile">
+							<h2>Чистый кузов <span>за&nbsp;10&nbsp;минут</span><br>
+								быстро и&nbsp;просто</h2>
+							<p>Инновационная автоматическая<br>
+								бесконтактная мойка в&nbsp;Туле</p>
+							<p>Бережем покрытие, хромированные детали,<br> резиновые уплотнители и&nbsp;нервы клиента</p>
+							<a href="">Построить маршрут</a>
+							<a href="">Получить скидку</a>
+						</div>
+					</div>
 		</header>
 		<main class="landing-page">
+			<!-- Блок преимущества -начало -->
 			<div class="advantage">
-				<div class="advantage-wrap">
 					<div class="advantage-block">
-						<div class="icon-block">
-							<img src="img/advantage-icon.svg" alt="">
-						</div>
+							<img class="advantage-icon" src="img/advantage-icon.svg" alt="">
 						<div class="text-wrap">
 							<h2>100% гарантия</h2>
 							<p>cохранения лакового покрытия автомобиля</p>
@@ -165,9 +174,7 @@
 					</div>
 					<div class="line-our-services"></div>
 					<div class="advantage-block">
-						<div class="icon-block">
-							<img src="img/service-time-icon.svg" alt="">
-						</div>
+							<img class="advantage-icon" src="img/service-time-icon.svg" alt="">
 						<div class="text-wrap">
 							<h2>10&nbsp;минут</h2>
 							<p>и&nbsp;у&nbsp;вас абсолютно чистый автомобиль</p>
@@ -175,24 +182,20 @@
 					</div>
 					<div class="line-our-services"></div>
 					<div class="advantage-block">
-						<div class="icon-block">
-							<img src="img/likes-customer-icon.svg" alt="">
-						</div>
+							<img class="advantage-icon" src="img/likes-customer-icon.svg" alt="">
 						<div class="text-wrap">
 							<h2>93% довольных</h2>
 							<p>качеством мойки<br>автомобилистов</p>
 						</div>
 					</div>
-				</div>
 			</div>
-
-			<div class="our-services">
+			<!-- Блок преимущества -конец -->
+			<!-- Блок Наши услуги - начало -->
+			<div id="our-servicesLink" class="our-services">
 				<h2>Наши услуги</h2>
-				<di class="our-services-wrap">
+				<div class="our-services-wrap">
 					<div class="our-services-block">
-						<div class="our-services-icons">
 							<img src="img/robot-washer-icon.svg" alt="">
-						</div>
 							<div class="services-text-wrap">
 								<h3>Робомойка</h3>
 								<p>Воспользуйтесь автоматизированной мойкой и&nbsp;получите чистый и&nbsp;сухой автомобиль через 10&nbsp;минут без лишних
@@ -200,9 +203,7 @@
 							</div>
 					</div>
 					<div class="our-services-block">
-						<div class="our-services-icons">
 							<img src="img/self-washer-icon.svg" alt="">
-						</div>
 							<div class="services-text-wrap">
 								<h3>Самомойка</h3>
 								<p>Вы&nbsp;сможете самостоятельно помыть свой автомобиль, используя профессиональное оборудование на&nbsp;одном
@@ -210,9 +211,7 @@
 							</div>
 					</div>
 					<div class="our-services-block">
-						<div class="our-services-icons">
 							<img src="img/vacuum- cleaner-icon.svg" alt="">
-						</div>
 							<div class="services-text-wrap">
 							<h3>Пылесос</h3>
 							<p>У&nbsp;нас возможна не&nbsp;только мойка, но&nbsp;и&nbsp;сухая чистка салона авто с&nbsp;использованием мощного
@@ -220,18 +219,18 @@
 						</div>
 					</div>
 					<div class="our-services-block">
-						<div class="our-services-icons">
 							<img src="img/carpets-icon.svg" alt="">
-						</div>
 							<div class="services-text-wrap">
 							<h3>Мойка ковров</h3>
 							<p>Для настоящих чистюль у&nbsp;нас есть дополнительные зоны для мойки ковриков автомобиля.</p>
 						</div>
 					</div>
-				</di>
+				</div>
 			</div>
+			<!-- Блок Наши услуги - конец -->
+
 			<!-- Блок Скидка - начало -->
-				<div class="discount">
+				<div id="discountLink" class="discount">
 					<div class="discount-banner"></div>
 					<div class="review-discount">
 						<div class="review-discount-text">
@@ -258,8 +257,8 @@
 			<!-- Блок Скидка - конец -->
 
 			<!-- Блок О нас - начало -->
-			<div class="about-us">
-					<div class="about-us-img"></div>
+			<div id="about-usLink" class="about-us">
+				<div class="about-us-img"></div>
 					<div class="about-us-text">
 						<h2>О&nbsp;нас</h2>
 						<p>СarWash Express&nbsp;&mdash; это инновационная мойка, которая позволяет вам ухаживать за&nbsp;своим автомобилем
@@ -278,34 +277,65 @@
 					<h2>CarWash Express <br>
 					предлагает своим клиентам:</h2>
 				<div class="utp">
-					<div></div>
-					<div>Качественную европейскую химию и&nbsp;косметику для авто</div>
-					<div>Легко отмывает грязь и&nbsp;не&nbsp;повреждает лакокрасочное покрытие</div>
-					<!-- <hr></hr> -->
+					<div class="utp-container">
+						<div class="utp-icon"></div>
+							<div class="utp-wrap">
+								<div class="utp-text">
+									<h3>Качественную европейскую химию и&nbsp;косметику для авто</h3>
+									<p>Легко отмывает грязь и&nbsp;не&nbsp;повреждает лакокрасочное</p>
+								</div>
+								<div class="hr"></div>
+							</div>
+					</div>
 
-					<div></div>
-					<div>Инновационное оборудование</div>
-					<div>Надежное, легкое и&nbsp;комфортное в&nbsp;использовании</div>
-					<!-- <hr></hr> -->
+					<div class="utp-container">
+						<div class="utp-icon"></div>
+						<div class="utp-wrap">
+							<div class="utp-text">
+								<h3>Инновационное оборудование</h3>
+								<p>Надежное, легкое и&nbsp;комфортное в&nbsp;использовании</p>
+							</div>
+							<div class="hr"></div>
+						</div>
+					</div>
 
-					<div></div>
-					<div>Выгодную программу лояльности</div>
-					<div>Интересные предложения для наших любимых клиентов</div>
-					<!-- <hr></hr> -->
+					<div class="utp-container">
+						<div class="utp-icon"></div>
+						<div class="utp-wrap">
+							<div class="utp-text">
+								<h3>Выгодную программу лояльности</h3>
+								<p>Интересные предложения для наших любимых клиентов</p>
+							</div>
+							<div class="hr"></div>
+						</div>
+					</div>
 
-					<div></div>
-					<div>Комфорт даже зимой</div>
-					<div>Даже в&nbsp;плохую погоду вы&nbsp;сможете ухаживать за&nbsp;своим авто в&nbsp;наших комфортных боксах.</div>
-					<!-- <hr></hr> -->
-					
-					<div></div>
-					<div>Все способы оплаты</div>
-					<div>Принимаем оплату наличными, картой или телефоном, а&nbsp;так&nbsp;же выдаем сдачу</div>
+					<div class="utp-container">
+						<div class="utp-icon"></div>
+						<div class="utp-wrap">
+							<div class="utp-text">
+								<h3>Комфорт даже&nbsp;зимой</h3>
+								<p>Даже в&nbsp;плохую погоду вы&nbsp;сможете ухаживать <br> за&nbsp;своим авто в&nbsp;наших комфортных боксах.</p>
+							</div>
+							<div class="hr"></div>
+						</div>
+					</div>
+
+					<div class="utp-container">
+						<div class="utp-icon"></div>
+						<div class="utp-wrap">
+							<div class="utp-text">
+								<h3>Все способы оплаты</h3>
+								<p>Принимаем оплату наличными, картой или телефоном, <br> а&nbsp;так&nbsp;же выдаем сдачу</p>
+							</div>
+							<div class="hr" style="visibility: hidden;"></div>
+						</div>
+					</div>
 				</div>
 			</div>
 					<!-- UTP блок конец -->
 				<!-- Блок отзывы начало -->
-			<div class="reviews">
+			<div id="reviewsLink" class="reviews">
 				<div class="reviews-wrap">
 					<h2>Отзывы</h2>
 					<p>Многие автовладельцы уже доверили нам заботу о&nbsp;своем авто.</p>
@@ -347,6 +377,10 @@
 						</div>
 						
 					</div>
+
+
+
+
 					<!-- Слайдер отзывов-конец -->
 				</div>
 			</div>
@@ -374,71 +408,63 @@
 				</div>
 			</div>
 			<!-- Форма отправки отзывов конец-->
+
 				<!-- блок отзывы конец -->
 		</main>
 		<footer class="footer">
-			<div class="logo-wrap">
-				<div class="logo-block">
+			<div class="footer-wrap">
+				<div class="logo-wrap-footer">
 					<img src="img/logo.svg" alt="Картинка не загрузилась">
-					<div class="text-logo">
+					<div class="text-logo-footer">
 						<h4>CarWash<span>Express</span></h4>
 						<p>Инновационная автомойка</p>
 					</div>
 				</div>
-				<iframe class="map"
-					src="https://yandex.ru/map-widget/v1/?um=constructor%3A9cebddebbc5fae2ffb8909b44218ef3d12f910174a498964130a0868cccf9e63&amp;source=constructor"
-					width="271" height="257" frameborder="0"></iframe>
-			</div>
-			<div class="footer-text-block">
-				<nav class="nav-footer">
-					<h5>Меню:</h5>
-					<a href="#">Услуги</a>
-					<a href="#">Акции</a>
-					<a href="#">О&nbsp;нас</a>
-					<a href="#">Отзывы</a>
-				</nav>
-					<div class="line-footer"></div>
-					<div class="contact">
-						<h5>Связаться с&nbsp;нами:</h5>
-						<div class="contact-phone">
-							<img src="img/phone-icon.svg" alt="">
-							<a href="tel:+7800000000">8 (800)000-00-0</a></div>
-						<div class="contact-mail">
-							<img src="img/email-icon.svg" alt="">
-							<a href="mailto:carwashexpress@ya.ru">carwashexpress@ya.ru</a></div>
-						<div class="contact-vk">
-							<img src="img/vk-icon.svg" alt="">
-							<a href="#">адрес в вк</a></div>
-					</div>
-				<div class="address-footer-wrap">
-					<div class="address-footer">
-						<h5>Адрес и&nbsp;время работы:</h5>
-						<div class="address-street">
-							<img src="img/map-marker-icon.svg" alt="">
-							<p>г.Тула, ул.Ленина,1</p>
+				<div class="footer-text-block">
+					<iframe class="map"
+						src="https://yandex.ru/map-widget/v1/?um=constructor%3A9cebddebbc5fae2ffb8909b44218ef3d12f910174a498964130a0868cccf9e63&amp;source=constructor"
+						width="271" height="257" frameborder="0"></iframe>
+					<nav class="nav-footer">
+						<h5>Меню:</h5>
+						<a href="#our-servicesLink">Услуги</a>
+						<a href="#discountLink">Акции</a>
+						<a href="#about-usLink">О&nbsp;нас</a>
+						<a href="#reviewsLink">Отзывы</a>
+					</nav>
+						<div class="line-footer"></div>
+						<div class="contact">
+							<h5>Связаться с&nbsp;нами:</h5>
+							<div class="contact-phone">
+								<img src="img/phone-icon.svg" alt="">
+								<a href="tel:+7800000000">8 (800)000-00-0</a></div>
+							<div class="contact-mail">
+								<img src="img/email-icon.svg" alt="">
+								<a href="mailto:carwashexpress@ya.ru">carwashexpress@ya.ru</a></div>
+							<div class="contact-vk">
+								<img src="img/vk-icon.svg" alt="">
+								<a href="#">адрес в вк</a></div>
 						</div>
-						<div class="working-hours">
-							<img src="img/24-icon.svg" alt="">
-							<p>Время работы:24/7, круглосуточно</p>
+					<div class="address-footer-wrap">
+						<div class="address-footer">
+							<h5>Адрес и&nbsp;время работы:</h5>
+							<div class="address-street">
+								<img src="img/map-marker-icon.svg" alt="">
+								<p>г.Тула, ул.Ленина,1</p>
+							</div>
+							<div class="working-hours">
+								<img src="img/24-icon.svg" alt="">
+								<p>Время работы:24/7, круглосуточно</p>
+							</div>
 						</div>
-					</div>
-					<div class="privacy-policy">
-						<a href="#">Политика конфиденциальности</a>
-						<p>2022. Все права защищены</p>
+						<div class="privacy-policy">
+							<a target="#" href="">Политика конфиденциальности</a>
+							<p>2022. Все права защищены</p>
+						</div>
 					</div>
 				</div>
 			</div>
+			<a class="back-to-top hidden"  href="#"><img src="img/back-to-top.svg" alt=""></a>
 		</footer>
 	</div>
-
-
-
-	<link rel="stylesheet" type="text/css" href="style/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="style/slick-theme.css"/>
-<!--	<script>-->
-<script type="text/javascript" src="js/slick.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="js/action.js"></script>
-<!--	</script>-->
 </body>
 </html>
