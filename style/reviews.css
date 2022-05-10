@@ -34,17 +34,18 @@
 
 .rev-slider {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 100px;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .slide {
-    width: 370px;
-    height: 349px;
+    /* width: 370px;
+    height: 349px; */
     margin: 0 20px 0 20px;
-    
 }
 
 .name-block {
