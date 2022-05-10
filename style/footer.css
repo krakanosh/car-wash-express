@@ -156,6 +156,28 @@
     color: #4D5459;
 }
 
+.back-to-top {
+    position: fixed;
+    right: 3vw;
+    bottom: 3vw;
+    border: solid #4D5459 1px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.back-to-top:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visibility {
+    visibility: visible;
+}
+
 /* @media (max-width: 2560px) {
     .logo-wrap-footer {
         right: 20%;

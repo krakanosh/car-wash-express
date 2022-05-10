@@ -364,7 +364,7 @@
 							</div>
 						</div>
 
-						<!-- <div class="slide">
+						<div class="slide">
 							<div class="name-block">
 								<h6>Сергей Мещеряков</h6>
 							</div>
@@ -373,7 +373,7 @@
 									<span>Отлично моют. Быстро и&nbsp;недорого. Теперь езжу только сюда.</span>
 								</div>
 							</div>
-						</div> -->
+						</div>
 					</div>
 
 					<!-- Слайдер отзывов-конец -->
@@ -458,8 +458,24 @@
 					</div>
 				</div>
 			</div>
-			<a class="back-to-top hidden"  href="#"><img src="img/back-to-top.svg" alt=""></a>
+			<a class="back-to-top hidden visibility"  href="#"><img src="img/back-to-top.svg" alt=""></a>
 		</footer>
 	</div>
+	<script>
+		let upToButton = document.querySelector(".content__style");
+		let dropDown = document.getElementById("drop__down");
+		let contentView = document.querySelector(".content__hidden");
+		// console.log(dropDown);
+		console.log(contentView);
+
+		menuButton.addEventListener(`mouseover`, function () {
+			contentView.classList.toggle(`content__hidden`)
+			console.log(`показать`);
+		});
+		dropDown.addEventListener(`mouseout`, function () {
+			contentView.classList.toggle(`content__hidden`)
+			console.log(`скрыть`);
+		});
+	</script>
 </body>
 </html>
