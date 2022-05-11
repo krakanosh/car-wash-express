@@ -2,7 +2,7 @@
 @import "base.css";
 @import "container.css";
 @import "header.css";
-@import "slider.css";
+@import "slider-head.css";
 @import "reviews.css";
 @import "footer.css";
 
@@ -90,7 +90,7 @@
 }
 
 .our-services-wrap {
-    width: 70vw;
+    /* width: 70vw; */
     min-width: 500px;
     display: grid;
     justify-content: center;
@@ -113,7 +113,7 @@
 .our-services-block {
     display: flex;
     flex-direction: column;
-    width: calc(289px + 10vw);
+    width: calc(239px + 10vw);
     height: 300px;
     border: 1px solid #F7931E;
     box-sizing: border-box;
@@ -133,7 +133,7 @@
 }
 
 .services-text-wrap {
-    padding: 24px 0px 0px 25px;
+    margin: 24px;
 }
 
 .services-text-wrap h3 {
@@ -598,9 +598,21 @@
     }
 }
 @media (max-width: 768px) {
-    .landing-page {
+    .our-services {
+        height: 120vh;
+    }
+    
+    .our-services-wrap {
+        display: flex;
+        flex-direction: column;
 
     }
+
+    .our-services-block {
+        width: calc(400px + 10vw);
+    }
+
+    .services-text-wrap {}
 } 
 
 @media (max-width: 320px) {
