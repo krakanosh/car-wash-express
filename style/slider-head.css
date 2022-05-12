@@ -27,23 +27,7 @@
     padding: 9px 10px 9px 10px;
 }
 
-.slideText a:nth-child(even) {
-    width: 221px;
-    height: 40px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    color: #FFFFFF;
-    background: #E9841A;
-    border-radius: 5px;
-}
-
-.slideText a:nth-child(odd) {
-    width: 211px;
-    height: 40px;
+.button-wrap a:nth-child(even) {
     border: 2px solid #F7931E;
     box-sizing: border-box;
     border-radius: 5px;
@@ -53,6 +37,24 @@
     font-size: 18px;
     line-height: 22px;
     color: #FFFFFF;
+    /* padding: 0px 10px 0px 10px; */
+}
+
+.button-wrap a:nth-child(odd) {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #E9841A;
+    border-radius: 5px;
+    padding: 11px 25px 11px 25px;
+}
+
+.open-hours {
+    display: none;
 }
 
 /* Собственно сам слайдер */

@@ -37,8 +37,8 @@
 .logo-block {
 	display: flex;
 	flex-direction: row;
-	/* min-width: 88px;
-	min-height: 88px; */
+	min-width: 88px;
+	min-height: 88px;
 }
 
 .logo-block img {
@@ -205,27 +205,269 @@ color: #000000;
 
 
 @media (max-width: 425px) {
+	.page-wrapper {}
+
 	.header {
 		height: 100vh;
 	}
 
+	.header-upper-block {
+		height: 100%;
+	}
+
+	.upper-block-wrap {}
+
 	.logo-block {
-		margin-left: 60%;
+		margin-left: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 94px;
+		position: absolute;
+		left: 37%;
+		top: 40%;
 	}
 
 	.text-logo {
 		display: none;
 	}
 
-	.nav-header, .line-header, .slider {
+	.line-header {}
+
+	.nav-header {}
+
+	.nav-header, .line-header {
 		display: none;
 	}
-	
-	.head-mobile-wrap {
+
+	.scale {}
+
+	.phone {
+		order: -1;
+	}
+
+	.phone img {
+		width: 22px;
+		margin-left: 5px;
+	}
+
+	.phone a {
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 12px;
+		display: flex;
+		align-items: center;
+		color: #000000;
+	}
+
+	.address {}
+
+	.address-text-wrap a {
+		width: 100px;
+	}
+
+	.address-text-wrap p {
+		display: none;
+	}
+
+	.slider {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.item {
+	}
+
+	.slideText {
 		width: 100%;
-		height: 100%;
+		margin-left: 40px;
+	}
+
+	.slideText h2 {
+		font-family: "Inter";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 24px !important;
+		line-height: 22px;
+		text-align: center;
+		color: #EDEFF0;
+	}
+
+	.slideText p {
+		font-family: "Roboto";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+		text-align: center;
+		color: #EDEFF0;
+	}
+
+	.button-wrap p {
+		display: block;
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 10px;
+		line-height: 12px;
+		color: #EDEFF0;
+	}
+
+	.button-wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.button-wrap a {
+		margin: 5px;
+	}
+
+	.prev, .next, .slider-dots, .line-slider, .slider-dots_item {
+		display: none;
+	}
+
+	.slider-dots {
+		visibility: hidden;
+	}
+
+	.head-mobile-wrap {
+		display: none;
+		/* width: 100%;
+		height: 533px;
 		background: url("/img/slide-1.jpg") no-repeat;
 		background-size: cover;
-		background-position: 50% 0;
+		background-position: 20% 30%; */
 	}
+
+	.head-mobile {}
+
+	.landing-page {}
+
+	.advantage {}
+
+	.advantage-block {}
+
+	.advantage-icon {}
+
+	.text-wrap {}
+
+	.line-our-services {}
+
+	.our-services {}
+
+	.our-services-wrap {}
+
+	.our-services-block {}
+
+	.services-text-wrap {}
+
+	.discount {}
+
+	.discount-banner {}
+
+	.review-discount {}
+
+	.review-discount-text {}
+
+	.review-discount-form {}
+
+	.form {}
+
+	.discount-button {}
+
+	.about-us {}
+
+	.about-us-img {}
+
+	.about-us-text {}
+
+	.utp-block {}
+
+	.utp {}
+
+	.utp-container {}
+
+	.utp-icon {}
+
+	.utp-wrap {}
+
+	.utp-text {}
+
+	.hr {}
+
+	.reviews {}
+
+	.reviews-wrap {}
+
+	.rev-slider {}
+
+	.rev-slide {}
+
+	.name-block {}
+
+	.rev-block {}
+
+	.wrap-text {}
+
+	.wrap-form-reviews {}
+
+	.form-reviews {}
+
+	.block-alignment {}
+
+	.left-side {}
+
+	.name {}
+
+	.email {}
+
+	.tel {}
+
+	.right-side {}
+
+	.button-submit {}
+
+	.footer {}
+
+	.footer-wrap {}
+
+	.logo-wrap-footer {}
+
+	.text-logo-footer {}
+
+	.footer-text-block {}
+
+	.map {}
+
+	.nav-footer {}
+
+	.line-footer {}
+
+	.contact {}
+
+	.contact-phone {}
+
+	.contact-mail {}
+
+	.contact-vk {}
+
+	.address-footer-wrap {}
+
+	.address-footer {}
+
+	.address-street {}
+
+	.working-hours {}
+
+	.privacy-policy {}
+
+	.back-to-top {}
+
+	.hidden {}
+
+	.visibility {}
 }

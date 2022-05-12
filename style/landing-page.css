@@ -70,7 +70,7 @@
     color: #000000;
 }
 
-.line-our-services {
+.line-advantage {
     min-width: 0.2px;
     height: 240px;
     background-color: #E9841A;
@@ -615,7 +615,7 @@
     .services-text-wrap {}
 } 
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
         .landing-page {}
         
         .advantage {}
@@ -632,17 +632,28 @@
         
         .text-wrap p {}
         
-        .line-our-services {}
+        .line-advantage {}
         
         
         /* блок Наши услуги начало */
-        .our-services {}
+        .our-services {
+            width: 100%;
+            height: max-content;
+        }
         
-        .our-services-wrap {}
+        .our-services-wrap {
+            align-items: center;
+        }
         
-        .our-services h2 {}
+        .our-services h2 {
+            margin-top: 40px;
+        }
         
-        .our-services-block {}
+        .our-services-block {
+            width: 90vw;
+            margin: 0;
+            margin-bottom: 24px;
+        }
         
         .our-services-icons {}
         
