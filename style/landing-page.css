@@ -21,6 +21,15 @@
     box-sizing: content-box;
 }
 
+.advantage h2 {
+    display: none;
+}
+
+.advantage-border-shadow {
+    display: flex;
+    flex-direction: row;
+}
+
 .advantage-wrap {
     display: flex;
     justify-content: center;
@@ -616,128 +625,170 @@
 } 
 
 @media (max-width: 425px) {
-        .landing-page {}
-        
-        .advantage {}
-        
-        .advantage-wrap {}
-        
-        .advantage-block {}
-        
-        .icon-block {}
-        
-        .text-wrap {}
-        
-        .text-wrap h2 {}
-        
-        .text-wrap p {}
-        
-        .line-advantage {}
-        
-        
-        /* блок Наши услуги начало */
-        .our-services {
-            width: 100%;
-            height: max-content;
-        }
-        
-        .our-services-wrap {
-            align-items: center;
-        }
-        
-        .our-services h2 {
-            margin-top: 40px;
-        }
-        
-        .our-services-block {
-            width: 90vw;
-            margin: 0;
-            margin-bottom: 24px;
-        }
-        
-        .our-services-icons {}
-        
-        .services-text-wrap {}
-        
-        .services-text-wrap h3 {}
-        
-        .services-text-wrap p {}
-        
-        /* блок Наши услуги конец */
-        
-        /* Блок Скидка - начало */
-        .discount {}
-        
-        .discount-banner {}
-        
-        .review-discount {}
-        
-        .review-discount-text {}
-        
-        .review-discount-text h2 {}
-        
-        .review-discount-text p {}
-        
-        .review-discount-form {}
-        
-        .review-discount-form h6 {}
-        
-        .review-discount-form span {}
-        
-        .review-discount-form ol {}
-        
-        .review-discount-form p {}
-        
-        .form {}
-        
-        .discount-button {}
-        
-        /* Блок Скидка - конец */
-        
-        /* Блок О нас - начало */
-        .about-us {}
-        
-        .about-us-img {}
-        
-        .about-us-text {}
-        
-        .about-us-text h2 {}
-        
-        .about-us-text p {}
-        
-        /* Блок О нас - конец */
-        
-        /* UTP блок начало */
-        .utp-block {}
-        
-        .utp-block h2 {}
-        
-        .utp {
-            /* display: grid;
-            grid-template-columns: 60px 357px 1fr;
-            grid-template-rows: 60px 1px 60px 1px 60px 1px 60px 1px 60px;
-            grid-column-gap: 0px;
-            grid-row-gap: 20px; */
-        
-            display: grid;
-            grid-template-columns: 0.2fr repeat(2, 1fr);
-            grid-template-rows: repeat(5, 1fr);
-            grid-column-gap: 0px;
-            grid-row-gap: 40px;
-        
-            width: 1047px;
-            height: 460px;
-            margin: auto;
-        
-        }
-        
-        .utp div:nth-child(3n+1) {}
-        
-        .utp div:nth-child(3n+2) {}
-        
-        .utp div:nth-child(3n+3) {}
-        
-        .utp hr:nth-child(3n+4) {}
+    .landing-page {}
+    
+    .advantage {
+        flex-direction: column;
+        height: max-content;
+        padding-bottom: 32px;
+    }
+
+    .advantage h2 {
+        margin-top: 32px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #111111;
+    }
+
+    .advantage span {
+        color: #E9841A;
+    }
+    
+    .advantage-wrap {}
+    
+    .advantage-border-shadow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin-top: 26px;
+        background: #EDEFF0;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+    }
+
+    .advantage-block {
+        width: 300px;
+        height: 200px;
+    }
+
+    .advantage-block:nth-child(1) {
+        margin-left: 0;
+    }
+    
+    .icon-block {}
+    
+    .text-wrap {}
+    
+    .text-wrap h2 {}
+    
+    .text-wrap p {}
+    
+    .line-advantage {
+        width: 80vw;
+        height: 0.2px;
+        background-color: #E9841A;
+        margin: 4vw 0 4vw 0;
+    }
+    
+    
+    /* блок Наши услуги начало */
+    .our-services {
+        width: 100%;
+        height: max-content;
+    }
+    
+    .our-services-wrap {
+        align-items: center;
+    }
+    
+    .our-services h2 {
+        margin-top: 40px;
+    }
+    
+    .our-services-block {
+        width: 90vw;
+        margin: 0;
+        margin-bottom: 24px;
+    }
+    
+    .our-services-icons {}
+    
+    .services-text-wrap {}
+    
+    .services-text-wrap h3 {}
+    
+    .services-text-wrap p {}
+    
+    /* блок Наши услуги конец */
+    
+    /* Блок Скидка - начало */
+    .discount {}
+    
+    .discount-banner {}
+    
+    .review-discount {}
+    
+    .review-discount-text {}
+    
+    .review-discount-text h2 {}
+    
+    .review-discount-text p {}
+    
+    .review-discount-form {}
+    
+    .review-discount-form h6 {}
+    
+    .review-discount-form span {}
+    
+    .review-discount-form ol {}
+    
+    .review-discount-form p {}
+    
+    .form {}
+    
+    .discount-button {}
+    
+    /* Блок Скидка - конец */
+    
+    /* Блок О нас - начало */
+    .about-us {}
+    
+    .about-us-img {}
+    
+    .about-us-text {}
+    
+    .about-us-text h2 {}
+    
+    .about-us-text p {}
+    
+    /* Блок О нас - конец */
+    
+    /* UTP блок начало */
+    .utp-block {}
+    
+    .utp-block h2 {}
+    
+    .utp {
+        /* display: grid;
+        grid-template-columns: 60px 357px 1fr;
+        grid-template-rows: 60px 1px 60px 1px 60px 1px 60px 1px 60px;
+        grid-column-gap: 0px;
+        grid-row-gap: 20px; */
+    
+        display: grid;
+        grid-template-columns: 0.2fr repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 40px;
+    
+        width: 1047px;
+        height: 460px;
+        margin: auto;
+    
+    }
+    
+    .utp div:nth-child(3n+1) {}
+    
+    .utp div:nth-child(3n+2) {}
+    
+    .utp div:nth-child(3n+3) {}
+    
+    .utp hr:nth-child(3n+4) {}
 }
 
 

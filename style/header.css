@@ -38,12 +38,6 @@
 	display: flex;
 	flex-direction: row;
 	min-width: 88px;
-	min-height: 88px;
-}
-
-.logo-block img {
-	width: 116px;
-	height: 99px;
 }
 
 .text-logo {
@@ -128,7 +122,7 @@ color: #000000;
 }
 
 .phone a {
-	padding-left: 10px;
+	margin-left: 10px;
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 700;
@@ -205,27 +199,45 @@ color: #000000;
 
 
 @media (max-width: 425px) {
-	.page-wrapper {}
-
-	.header {
-		height: 100vh;
-	}
-
 	.header-upper-block {
-		height: 100%;
+		position: fixed;
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-color: #F7931E;
 	}
 
-	.upper-block-wrap {}
+	.upper-block-wrap {
+		height: 70px;
+	}
 
 	.logo-block {
 		margin-left: 0;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 94px;
 		position: absolute;
-		left: 37%;
-		top: 40%;
+		left: 36%;
+		top: 35%;
+	}
+
+	.logo-block img {
+		min-width: 84px;
+		border-radius: 50%;
+		/* border: solid 5px #EDEFF0; */
+	}
+
+	.border-logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #EDEFF0;
+		border-radius: 50%;
+		width: 70px;
+		height: 70px;
+
+		/* border-bottom-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-color: #F7931E; */
 	}
 
 	.text-logo {
@@ -260,9 +272,21 @@ color: #000000;
 		display: flex;
 		align-items: center;
 		color: #000000;
+		margin-left: 5px;
 	}
 
-	.address {}
+	.phone span {
+		display: none;
+	}
+
+	.address img {
+		width: 22px;
+	}
+
+	.address-text-wrap {
+		margin-right: 0;
+		margin-left: 5px;
+	}
 
 	.address-text-wrap a {
 		width: 100px;
@@ -273,25 +297,25 @@ color: #000000;
 	}
 
 	.slider {
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		margin-bottom: 0;
+		margin-top: 90px !important;
 	}
 
-	.item {
-	}
+	.item {}
 
 	.slideText {
 		width: 100%;
-		margin-left: 40px;
+		height: 80%;
+		margin-top: 40px;
+		margin-left: 35px;
 	}
 
 	.slideText h2 {
 		font-family: "Inter";
 		font-style: normal;
-		font-weight: 700;
+		font-weight: 700 !important;
 		font-size: 24px !important;
-		line-height: 22px;
+		line-height: 22px !important;
 		text-align: center;
 		color: #EDEFF0;
 	}
@@ -299,10 +323,10 @@ color: #000000;
 	.slideText p {
 		font-family: "Roboto";
 		font-style: normal;
-		font-weight: 400;
-		font-size: 14px;
-		line-height: 16px;
-		text-align: center;
+		font-weight: 400 !important;
+		font-size: 14px !important;
+		line-height: 16px !important;
+		text-align: center !important;
 		color: #EDEFF0;
 	}
 
@@ -320,6 +344,11 @@ color: #000000;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		margin-top: 10vh;
+	}
+
+	.open-hours {
+		margin-top: 8px;
 	}
 
 	.button-wrap a {
@@ -333,141 +362,3 @@ color: #000000;
 	.slider-dots {
 		visibility: hidden;
 	}
-
-	.head-mobile-wrap {
-		display: none;
-		/* width: 100%;
-		height: 533px;
-		background: url("/img/slide-1.jpg") no-repeat;
-		background-size: cover;
-		background-position: 20% 30%; */
-	}
-
-	.head-mobile {}
-
-	.landing-page {}
-
-	.advantage {}
-
-	.advantage-block {}
-
-	.advantage-icon {}
-
-	.text-wrap {}
-
-	.line-our-services {}
-
-	.our-services {}
-
-	.our-services-wrap {}
-
-	.our-services-block {}
-
-	.services-text-wrap {}
-
-	.discount {}
-
-	.discount-banner {}
-
-	.review-discount {}
-
-	.review-discount-text {}
-
-	.review-discount-form {}
-
-	.form {}
-
-	.discount-button {}
-
-	.about-us {}
-
-	.about-us-img {}
-
-	.about-us-text {}
-
-	.utp-block {}
-
-	.utp {}
-
-	.utp-container {}
-
-	.utp-icon {}
-
-	.utp-wrap {}
-
-	.utp-text {}
-
-	.hr {}
-
-	.reviews {}
-
-	.reviews-wrap {}
-
-	.rev-slider {}
-
-	.rev-slide {}
-
-	.name-block {}
-
-	.rev-block {}
-
-	.wrap-text {}
-
-	.wrap-form-reviews {}
-
-	.form-reviews {}
-
-	.block-alignment {}
-
-	.left-side {}
-
-	.name {}
-
-	.email {}
-
-	.tel {}
-
-	.right-side {}
-
-	.button-submit {}
-
-	.footer {}
-
-	.footer-wrap {}
-
-	.logo-wrap-footer {}
-
-	.text-logo-footer {}
-
-	.footer-text-block {}
-
-	.map {}
-
-	.nav-footer {}
-
-	.line-footer {}
-
-	.contact {}
-
-	.contact-phone {}
-
-	.contact-mail {}
-
-	.contact-vk {}
-
-	.address-footer-wrap {}
-
-	.address-footer {}
-
-	.address-street {}
-
-	.working-hours {}
-
-	.privacy-policy {}
-
-	.back-to-top {}
-
-	.hidden {}
-
-	.visibility {}
-}
