@@ -48,7 +48,7 @@
             transform: translate3d(0, 0, 0);
 }
 
-/* .slick-track
+.slick-track
 {
     position: relative;
     top: 0;
@@ -57,8 +57,8 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-} */
-/* .slick-track:before,
+}
+.slick-track:before,
 .slick-track:after
 {
     display: table;
@@ -72,7 +72,7 @@
 .slick-loading .slick-track
 {
     visibility: hidden;
-} */
+}
 
 .slick-slide
 {
