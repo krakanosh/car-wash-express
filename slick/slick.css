@@ -58,7 +58,7 @@
     margin-left: auto;
     margin-right: auto;
 }
-.slick-track:before,
+/* .slick-track:before,
 .slick-track:after
 {
     display: table;
@@ -72,7 +72,7 @@
 .slick-loading .slick-track
 {
     visibility: hidden;
-}
+} */
 
 .slick-slide
 {
