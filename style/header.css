@@ -244,11 +244,11 @@ color: #000000;
 
 .slider-line {
 	background-color: #E9841A;
-	width: 0.2px;
-	height: 120px;
-	position: absolute;
-	top: 48%;
-	left: 12.9%;
+	width: 1px;
+	min-height: 120px;
+	position: relative;
+	bottom: 20%;
+	right: 37.4%;
 }
 
 .head-mobile {

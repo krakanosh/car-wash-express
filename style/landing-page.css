@@ -219,8 +219,8 @@
 .review-discount-form {
     width: 600px;
     width: 42vw;
-    max-width: 600px;
-    min-width: 500px;
+    /* max-width: 600px;
+    min-width: 500px; */
     height: 430px;
     margin-top: -200px;
     background: #FFFFFF;
@@ -603,10 +603,12 @@
     
     .discount-banner {}
     
-    .review-discount {}
+    .review-discount {
+        width: max-content;
+    }
     
     .review-discount-text {
-        align-items: center;
+        width: 80%;
     }
     
     .review-discount-text h2 {
@@ -617,8 +619,10 @@
     .review-discount-text p {}
     
     .review-discount-form {
-        min-width: 95%;
+        width: 85%;
         height: max-content;
+        display: flex;
+        flex-direction: column;
     }
     
     .review-discount-form h6 {
@@ -746,6 +750,32 @@
     .utp-text p {
         width: 300px;
         font-size: 18px;
+    }
+
+    .discount {
+        text-align: center;
+    }
+
+    .review-discount {
+        height: max-content;
+    }
+
+    .review-discount-text {
+        width: 40%;
+        text-align: center;
+    }
+
+    .review-discount-form {
+        width: 35%;
+        margin-top: 80px;
+    }
+
+    .review-discount-form h6 {
+        margin-top: 40px;
+    }
+
+    .review-discount-form p {
+        margin-bottom: 40px;
     }
 }
 
